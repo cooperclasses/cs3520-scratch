@@ -13,7 +13,7 @@ void print_evens(unsigned int x) {
   cout << "evens:";
   for (unsigned int ii = 1; ii <= x; ++ ii) {
     if (is_even(ii)) {
-      cout << ii;
+      cout << " " << ii;
     }
   }
   cout << endl;
@@ -23,7 +23,7 @@ void print_odds(unsigned int x) {
   cout << "odds:";
   for (unsigned int ii = 1; ii <= x; ++ ii) {
     if (is_odd(ii)) {
-      cout << ii;
+      cout << " " << ii;
     }
   }
   cout << endl;
