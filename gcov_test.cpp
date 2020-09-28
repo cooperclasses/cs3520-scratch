@@ -9,11 +9,11 @@ int main() {
       cout << i2 << endl;
 
       if (i1 < 0) {
-	cout << "not run" << endl;
+        cout << "not run" << endl;
       }
 
       for (int i3 = 0; i3 < 100; ++ i3) {
-	cout << i3 << endl;
+        cout << i3 << endl;
       }
     }
   }

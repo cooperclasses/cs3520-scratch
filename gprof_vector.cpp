@@ -5,11 +5,10 @@ using namespace std;
 static const int ITERATIONS = 3000000;
 
 vector<int> inc_vec_value(vector<int> v) {
-	vector<int> ret = v;
-	for (int & e: ret) {
+	for (int & e: v) {
 		e += 1;
 	}
-	return ret;
+	return v;
 }
 
 void inc_vec_ref(vector<int> & v) {
