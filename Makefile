@@ -7,9 +7,9 @@ LDFLAGS=-std=c++11 -Og -ggdb
 #CXXFLAGS:=$(CXXFLAGS) -O0 -g -fprofile-arcs -ftest-coverage
 #LDFLAGS:=$(LDFLAGS) -fprofile-arcs
 
-## for gprof
-#CXXFLAGS:=$(CXXFLAGS) -O0 -g -pg
-#LDFLAGS:=$(LDFLAGS) -pg
+## for gperftools
+#CXXFLAGS:=$(CXXFLAGS) -O0 -g
+#LDFLAGS:=$(LDFLAGS) -lprofiler
 
 all: $(PROGRAMS)
 
@@ -20,4 +20,4 @@ $(PROGRAMS): %: %.o
 	g++ $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f log.txt *~ *.o $(PROGRAMS) *.gcda *.gcno *.gcov gmon.out
+	rm -f log.txt *~ *.o $(PROGRAMS) *.gcda *.gcno *.gcov prof.out
