@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-static const int ITERATIONS = 3000000;
+static const int ITERATIONS = 1000000;
 
 vector<int> inc_vec_value(vector<int> v) {
 	for (int & e: v) {
