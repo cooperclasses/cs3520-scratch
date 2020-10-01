@@ -16,4 +16,4 @@ $(PROGRAMS): %: %.o
 	g++ $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f log.txt *~ *.o $(PROGRAMS) *.gcda *.gcno *.gcov callgrind.out.*
+	rm -rf test.log *~ *.o *.dSYM $(PROGRAMS) *.gcda *.gcno *.gcov callgrind.out.*
