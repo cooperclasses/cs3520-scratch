@@ -23,6 +23,15 @@
     },
     {
       "type": "shell",
+      "label": "make scratch",
+      "command": "make",
+      "args": [ "scratch" ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$gcc"],
+      "group": "build"
+    },
+    {
+      "type": "shell",
       "label": "make gdb_bounds",
       "command": "make",
       "args": [ "gdb_bounds" ],
