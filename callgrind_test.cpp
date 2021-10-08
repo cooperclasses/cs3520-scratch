@@ -6,7 +6,7 @@ const int ITERATIONS = 10000;
 int funcA1(int x) {
   int ret = x;
   for (int ii = 0; ii < ITERATIONS; ++ ii) {
-	ret += 1;
+  	ret += 1;
     ret = (ret * 3) % 5011;
   }
   return ret;

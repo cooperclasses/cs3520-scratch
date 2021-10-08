@@ -1,7 +1,7 @@
 PROGRAMS=scratch valgrind_uninit valgrind_invalid valgrind_return gdb_zero gdb_bounds gdb_loop gdb_fact gdb_objects gcov_test gcov_evenodd callgrind_test callgrind_vector
 
-CXXFLAGS=-std=c++11 -O0 -g -fno-inline -Wall # -Werror -pedantic-errors
-LDFLAGS=-std=c++11
+CXXFLAGS=-std=c++17 -O0 -g -fno-inline -Wall # -Werror -pedantic-errors
+LDFLAGS=-std=c++17
 
 ## for gcov
 #CXXFLAGS:=$(CXXFLAGS) -fprofile-arcs -ftest-coverage
