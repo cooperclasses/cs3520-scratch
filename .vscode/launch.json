@@ -11,11 +11,11 @@
             "args": [],
             "type": "cppdbg",
             "request": "launch",
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "windows": { "externalConsole": false, "MIMode": "gdb" },
-            "osx": { "externalConsole": true, "MIMode": "lldb" },
+            "osx": { "externalConsole": false, "MIMode": "lldb" },
             "linux": { "externalConsole": false, "MIMode": "gdb" }
         }
     ]
