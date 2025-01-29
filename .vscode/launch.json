@@ -5,9 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "debug active file",
-            "preLaunchTask": "make ${fileBasenameNoExtension}",
-            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "name": "debug scratch",
+            "preLaunchTask": "make scratch",
+            "program": "${workspaceFolder}/scratch",
             "args": [],
             "type": "cppdbg",
             "request": "launch",
